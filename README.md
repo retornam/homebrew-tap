@@ -53,7 +53,3 @@ References
 [documentation]: https://docs.brew.sh
 [gomodupgrade]: https://github.com/oligot/go-mod-upgrade/releases
 [style]: https://docs.brew.sh/Formula-Cookbook
-
-
-
-

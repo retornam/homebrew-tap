@@ -10,14 +10,15 @@ class Gcrane < Formula
   def install
 
     ldflags = %W[
-      -s -w
-      -X github.com/google/go-containerregistry/cmd/gcrane/cmd.Version=#{version}
+      -s
+      -w
+      -X
+      github.com/google/go-containerregistry/cmd/gcrane/cmd.Version=#{version}
     ]
 
+    system("go", "build", *std_go_args(ldflags: ldflags), "./cmd/gcrane")
 
-    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/gcrane"
-
-    generate_completions_from_executable(bin/"gcrane",    "completion")
+    generate_completions_from_executable(bin / "gcrane", "completion")
   end
 
   test do
