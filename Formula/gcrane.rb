@@ -1,8 +1,8 @@
 class Gcrane < Formula
   desc "Superset of crane commands with additional commands specific to gcr.io"
   homepage "https://github.com/google/go-containerregistry"
-  url "https://github.com/google/go-containerregistry/archive/refs/tags/v0.19.0.tar.gz"
-  sha256 "c07dca10f60339d03e3a690daae8512741e9a2bc23c0bcb3104b9892b43179ae"
+  url "https://github.com/google/go-containerregistry/releases/download/v0.20.2/go-containerregistry-0.20.2.tar.gz"
+  sha256 "afd8c6e9e4c768f7767a2ab3a385879bb1e4421836965e32f8b49356b4d181f0"
   license "Apache-2.0"
 
   depends_on "go" => :build
